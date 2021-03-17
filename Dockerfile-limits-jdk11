@@ -1,0 +1,9 @@
+FROM adoptopenjdk:11-jdk-hotspot
+COPY *.java /src/
+RUN mkdir /app \
+    && ls /src \
+    && javac /src/StressMemory.java -d /app
+ENV JAVA_OPTS=""
+CMD ["sh", "-c", \
+     "java -version \
+      && java $JAVA_OPTS -cp /app StressMemory"]
