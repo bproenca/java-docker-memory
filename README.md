@@ -1,11 +1,13 @@
-## How to run
+# How to run
 
-## JDK-8
+Run `.sh` files
+
+# Jdk-8
 
 In this example, we compare old/new JDK-8 memory behavior inside containers.  
 This proves the older JVM does not respect the container memory allocation.
 
-### Expected outtput:
+## Expected outtput:
 
 Old:
 ```
@@ -40,7 +42,7 @@ Initial Memory (Xms) : 16mb
 Max Memory (Xmx) : 247mb
 ```
 
-## JDK-11
+# Jdk-11
 
 Java memory eating program (*will consume memory in chunks of 10mb until app goes down*)
 
